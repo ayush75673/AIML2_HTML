@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global Daily News</title>
+  <style>
+    :root {
+      --bg: #f4f7fb;
+      --card: #ffffff;
+      --text: #1b1b1b;
+      --muted: #4a5568;
+      --accent: #0b5ed7;
+      --border: #dfe7f1;
+      --shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(#eef4ff, #f7fafc);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 30px 20px 60px;
+    }
+
+    .site-header {
+      text-align: center;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.6rem;
+    }
+
+    .tagline {
+      margin: 8px 0 0;
+      font-size: 1.1rem;
+      color: var(--muted);
+    }
+
+    nav {
+      text-align: center;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 14px 0;
+      margin: 18px 0 25px;
+      font-size: 1.05rem;
+    }
+
+    nav a {
+      color: var(--accent);
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: 600;
+    }
+
+    nav a:hover,
+    nav a:focus {
+      text-decoration: underline;
+    }
+
+    section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 24px 26px;
+      margin-bottom: 28px;
+      box-shadow: var(--shadow);
+    }
+
+    h2 {
+      margin-top: 0;
+      font-size: 2rem;
+      color: #0f172a;
+    }
+
+    .lead {
+      font-size: 1.1rem;
+      margin: 10px 0 20px;
+    }
+
+    .image-wrap {
+      text-align: center;
+      margin: 14px 0;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+    }
+
+    .read-more {
+      display: inline-block;
+      margin-top: 8px;
+      color: var(--accent);
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .read-more:hover,
+    .read-more:focus {
+      text-decoration: underline;
+    }
+
+    .podcast-box,
+    .contact-box {
+      background: #f8fbff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      padding-top: 8px;
+      font-size: 0.98rem;
+    }
+
+    @media (max-width: 640px) {
+      h1 {
+        font-size: 2.1rem;
+      }
+
+      section {
+        padding: 20px 16px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 6px 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="site-header">
+      <h1>Global Daily News</h1>
+      <p class="tagline">Your Trusted Source for Latest Updates</p>
+    </header>
+
+    <nav aria-label="Main navigation">
+      <a href="#World">World News</a> |
+      <a href="#Sports">Sports News</a> |
+      <a href="#Entertainment">Entertainment</a> |
+      <a href="#Podcast">Podcasts</a> |
+      <a href="#Contact">Contact</a>
+    </nav>
+
+    <main>
+      <section id="World">
+        <h2>World News</h2>
+        <p class="lead"><strong>Today's Top Headline:</strong> Global leaders meet to discuss climate change initiatives.</p>
+        <div class="image-wrap">
+          <img src="https://m.media-amazon.com/images/M/MV5BNGYwNDlmZDgtMDg1Yi00N2JmLTk0NzQtNWVkN2NiMTQxY2RlXkEyXkFqcGc@._V1_.jpg" alt="BBC World News" width="600" height="400">
+        </div>
+        <a class="read-more" href="https://www.bbc.com/news" target="_blank" rel="noopener noreferrer">Read more on BBC</a>
+      </section>
+
+      <section id="Sports">
+        <h2>Sports News</h2>
+        <p class="lead">Highlights of yesterday's football match with thrilling last-minute goals!</p>
+        <div class="image-wrap">
+          <img src="https://images.unsplash.com/photo-1547347298-4074fc3086f0?auto=format&fit=crop&w=900&q=80" alt="Football action" width="600" height="400">
+        </div>
+      </section>
+
+      <section id="Entertainment">
+        <h2>Entertainment</h2>
+        <p class="lead">A new blockbuster movie has taken the box office by storm, delighting fans and critics alike.</p>
+        <div class="image-wrap">
+          <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=900&q=80" alt="Entertainment and media" width="600" height="400">
+        </div>
+      </section>
+
+      <section id="Podcast">
+        <h2>Podcasts</h2>
+        <div class="podcast-box">
+          <p class="lead">Listen to our latest podcast episode featuring global leaders, creators, and change-makers.</p>
+          <p><strong>Featured topic:</strong> Innovation, culture, and the future of communication.</p>
+        </div>
+      </section>
+
+      <section id="Contact">
+        <h2>Contact</h2>
+        <div class="contact-box">
+          <p><strong>Email:</strong> contact@globaldailynews.com</p>
+          <p><strong>Phone:</strong> +1 (800) 555-0199</p>
+          <p><strong>Office:</strong> 24 News Avenue, New York, USA</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Global Daily News</p>
+    </footer>
+  </div>
+</body>
+</html>
